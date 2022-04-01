@@ -55,6 +55,60 @@ class CrudController extends Controller {
       }
     }
   }
+  async login() {
+    const { ctx, app } = this
+    const rule = {
+      email: { type: 'email', required: true, message: '邮箱格式不正确' },
+      password: { type: 'string', required: true },
+    }
+    try {
+      const errMsg = ctx.validate(rule, ctx.request.body)
+      console.log(errMsg)
+      const { email, password } = ctx.request.body
+      const res = await ctx.model.User.findOne({ where: { email: email } })
+      if (res) {
+        if (md5(password + salt) === res.password) {
+          //生成 token 的方式
+          const token = app.jwt.sign(
+            {
+              email: res.email, //需要存储的 token 数据
+              name: res.name,
+              id: res.id,
+            },
+            app.config.jwt.secret
+          )
+
+          // 返回 token 到前端
+          ctx.body = {
+            code: 200,
+            msg: '登录成功',
+            data: {
+              id: res.id,
+              name: res.name,
+              age: res.age || null,
+              email: res.email,
+              token,
+            },
+          }
+        } else {
+          ctx.body = {
+            code: -1,
+            msg: '密码错误',
+          }
+        }
+      } else {
+        ctx.body = {
+          code: -1,
+          msg: '用户不存在',
+        }
+      }
+    } catch (error) {
+      ctx.body = {
+        code: -1,
+        msg: error.errors[0].message ? error.errors[0].message : '参数错误',
+      }
+    }
+  }
 }
 
 module.exports = CrudController

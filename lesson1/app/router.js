@@ -13,4 +13,5 @@ module.exports = (app) => {
   router.get('/addSession', controller.home.addSession)
   router.get('/read', jwt, controller.crud.read)
   router.post('/create', controller.crud.createUser)
+  router.post('/login', controller.crud.login)
 }
