@@ -1,0 +1,338 @@
+{
+  "keys": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+  "middleware": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+  "sequelize": {
+    "dialect": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "database": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "host": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "port": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "username": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "password": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "timezone": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "define": {
+      "freezeTableName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+      "timestamps": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+      "paranoid": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+      "createdAt": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+      "updatedAt": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+      "underscored": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js"
+    }
+  },
+  "view": {
+    "mapping": {
+      ".html": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js"
+    },
+    "root": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-view/config/config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+      "type": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "allowMethods": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js"
+  },
+  "jwt": {
+    "secret": "/Users/longhuadmin/nodeProject/egg-project/lesson1/config/config.default.js",
+    "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-jwt/config/config.default.js"
+  },
+  "ejs": {
+    "cache": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-view-ejs/config/config.local.js"
+  },
+  "session": {
+    "maxAge": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-static/config/config.default.js"
+  },
+  "validate": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg-validate/config/config.default.js",
+  "env": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "name": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "version": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "description": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "private": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "egg": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-jwt": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-view-ejs": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "prettier": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "sequelize-cli": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "stop": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "dev": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "debug": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "test": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "cov": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "lint": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "ci": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "autod": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "url": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "license": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "strict": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "depth": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "env": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "level": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "logging": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "port": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/longhuadmin/nodeProject/egg-project/lesson1/node_modules/egg/config/config.default.js"
+}
