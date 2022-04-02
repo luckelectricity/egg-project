@@ -5,11 +5,13 @@ const md5 = require('md5')
 const { salt } = require('../common/salt')
 
 class CrudController extends Controller {
+  // 查询所有用户
   async read() {
     const { ctx } = this
     const res = await ctx.model.User.findAll()
     ctx.body = res
   }
+  // 用户注册
   async createUser() {
     const { ctx } = this
     ctx.logger.info('打印日志')
@@ -21,7 +23,6 @@ class CrudController extends Controller {
     }
     try {
       const errMsg = ctx.validate(rule, ctx.request.body)
-      console.log(errMsg)
       const { name, age, password, email } = ctx.request.body
       const isEmail = await ctx.model.User.findOne({ where: { email: email } })
       if (isEmail === null) {
@@ -55,6 +56,7 @@ class CrudController extends Controller {
       }
     }
   }
+  // 用户登陆
   async login() {
     const { ctx, app } = this
     const rule = {

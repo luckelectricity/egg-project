@@ -44,6 +44,10 @@ module.exports = (appInfo) => {
     secret: '1q2w3e4r5T@!', //自定义 token 的加密条件字符串
   }
 
+  config.multipart = {
+    mode: 'file',
+  }
+
   config.ejs = {}
 
   // add your user config here
