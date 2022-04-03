@@ -1,3 +1,4 @@
+const Controller = require('egg').Controller
 class UploadController extends Controller {
   async upload() {
     const { ctx } = this
