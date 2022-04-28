@@ -3,6 +3,7 @@
 const Controller = require('egg').Controller
 
 class wordController extends Controller {
+  // 一次添加一个单词
   async addword() {
     const { ctx } = this
     try {
@@ -27,6 +28,11 @@ class wordController extends Controller {
         msg: error,
       }
     }
+  }
+
+  // 一次添加多个单词
+  async addAllWords() {
+    // TODO
   }
 
   async delWord() {
