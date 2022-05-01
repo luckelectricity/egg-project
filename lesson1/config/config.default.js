@@ -8,7 +8,7 @@ module.exports = (appInfo) => {
   config.middleware = []
   config.sequelize = {
     dialect: 'mysql',
-    database: 'user',
+    database: 'memorize_words',
     host: 'localhost',
     port: 3306,
     username: 'root',
@@ -17,12 +17,12 @@ module.exports = (appInfo) => {
     timezone: '+08:00',
     define: {
       // 取消数据表名复数
-      freezeTableName: true, // 自动写入时间戳 created_at updated_at
-      timestamps: true, // 字段生成软删除时间戳 deleted_at
-      paranoid: true,
-      createdAt: 'created_at',
-      updatedAt: 'updated_at',
-      underscored: true,
+      freezeTableName: true, // 锁定表名 不加S
+      timestamps: false, // 字段生成软删除时间戳 deleted_at
+      // paranoid: true,
+      // createdAt: 'created_at',
+      // updatedAt: 'updated_at',
+      // underscored: true,
     },
   }
 
@@ -52,7 +52,7 @@ module.exports = (appInfo) => {
 
   // add your user config here
   const userConfig = {
-    // myAppName: 'egg',
+    salt: '1q2w3e4r5T@!',
   }
 
   return {
