@@ -10,7 +10,6 @@ class UserService extends BaseService {
           name,
         },
       })
-      console.log(user)
       return user
     })
   }

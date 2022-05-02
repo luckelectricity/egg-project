@@ -7,7 +7,6 @@ class WordService extends Service {
     try {
       const { ctx } = this
       const res = await ctx.model.Words.findOne({ where: { word: word } })
-      console.log(res, 'res')
       return res
     } catch (error) {
       console.log(error, 'findWord')

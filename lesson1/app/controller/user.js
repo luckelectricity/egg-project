@@ -104,15 +104,15 @@ class UserController extends BaseController {
   async edit() {
     const { ctx } = this
     const params = ctx.params()
-    const user = await ctx.service.user.edit({
+    await ctx.service.user.edit({
       ...params,
       updateTime: ctx.helper.time(),
     })
-    if (user) {
-      this.success({
-        ...user,
-      })
-    }
+    const user = await ctx.service.user.getUser(ctx.username)
+    this.success({
+      ...ctx.helper.unPick(user.dataValues, ['pwd']),
+      updateTime: ctx.helper.timesTamp(user.dataValues.updateTime),
+    })
   }
 }
 
