@@ -9,6 +9,7 @@ module.exports = (app) => {
   router.post('/api/user/login', controller.user.login)
   router.post('/api/user/detail', controller.user.detail)
   router.post('/api/user/logout', controller.user.logout)
+  router.post('/api/user/edit', controller.user.edit)
   // words
   // router.post('/wordAdd', jwt, controller.word.addword)
 }
