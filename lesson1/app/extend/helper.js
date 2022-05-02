@@ -4,9 +4,18 @@ module.exports = {
   time() {
     return dayjs().format('YYYY-MM-DD HH:mm:ss')
   },
-  timesTanp(data) {
+  timesTamp(data) {
     return new Date(data).getTime()
   },
 
-  unPick(data, arr) {},
+  unPick(source, arr) {
+    if (Array.isArray(arr)) {
+      arr.forEach((item) => {
+        if (source.hasOwnProperty(item)) {
+          delete source[item]
+        }
+      })
+      return source
+    }
+  },
 }

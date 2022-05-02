@@ -26,6 +26,16 @@ module.exports = (appInfo) => {
     },
   }
 
+  config.redis = {
+    client: {
+      port: 6379, // Redis port
+      host: '127.0.0.1', // Redis host
+      password: '123456',
+      db: 0,
+    },
+    expires: 60 * 60 * 24, // 过期时间，单位：秒
+  }
+
   config.view = {
     mapping: {
       '.html': 'ejs',
@@ -42,6 +52,15 @@ module.exports = (appInfo) => {
   }
   config.jwt = {
     secret: '1q2w3e4r5T@!', //自定义 token 的加密条件字符串
+    expiresIn: 1000 * 60 * 60 * 24 * 7, // token 过期时间
+  }
+
+  config.session = {
+    key: 'EGG_SESS',
+    maxAge: 24 * 3600 * 1000, // 1 天
+    httpOnly: true,
+    encrypt: true,
+    renew: true,
   }
 
   config.multipart = {
@@ -49,6 +68,10 @@ module.exports = (appInfo) => {
   }
 
   config.ejs = {}
+
+  config.auth = {
+    exclude: ['/api/user/login', '/api/user/register'],
+  }
 
   // add your user config here
   const userConfig = {
