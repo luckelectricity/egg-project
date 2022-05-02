@@ -1,9 +1,10 @@
 module.exports = (options) => {
   return async (ctx, next) => {
     const url = ctx.request.url
-    const user = await ctx.app.redis.get(ctx.user.id)
-    const name = ctx.username
-    if (!options.exclude.includes(url.split('?')) && !user && !name) {
+    if (
+      !options.exclude.includes(url.split('?')[0]) &&
+      !ctx.request.header.token
+    ) {
       ctx.body = {
         code: -1,
         msg: '请先登录',
