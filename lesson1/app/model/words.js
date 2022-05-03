@@ -1,14 +1,14 @@
 module.exports = (app) => {
   const { STRING, INTEGER, ENUM, DATE } = app.Sequelize
-  const Words = app.model.define('words', {
+  const Words = app.model.define('word', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-    word: STRING(255),
+    word: STRING(20),
+    mean: STRING(300),
     status: INTEGER,
     grade: INTEGER,
-    remark: STRING(255),
-    createdAt: DATE,
-    updatedAt: DATE,
-    deletedAt: DATE,
+    remark: STRING(300),
+    createTime: DATE,
+    updateTime: DATE,
   })
   return Words
 }
