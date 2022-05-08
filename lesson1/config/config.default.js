@@ -73,6 +73,16 @@ module.exports = (appInfo) => {
     exclude: ['/api/user/login', '/api/user/register'],
   }
 
+  config.baiduTransUrl = 'https://fanyi-api.baidu.com/api/trans/vip/translate'
+
+  config.transQuery = {
+    from: 'en',
+    to: 'zh',
+    appid: '20220406001160939',
+    salt: 'swfxueyingyu',
+    miyao: 'P199Kf1zSfkFsUAgVaDv',
+  }
+
   // add your user config here
   const userConfig = {
     salt: '1q2w3e4r5T@!',

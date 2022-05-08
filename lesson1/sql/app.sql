@@ -41,9 +41,7 @@ create table user
     update current_timestamp comment '更新时间'
     )engine=innodb default charset=utf8;
 
---- 更新word 表
-alter table word add column status int
-default 0 comment '状态';
+    --- 更新word 表
+    --- alter table word add column status int default 0 comment '状态';
 
-alter table word add column grade int
-default 0 comment '等级';
+    --- alter table word add column grade int default 0 comment '等级';

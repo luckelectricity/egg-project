@@ -1,6 +1,7 @@
 'use strict'
 
 const BaseService = require('./base')
+const md5 = require('md5')
 
 class WordService extends BaseService {
   async findWord(word) {
@@ -24,6 +25,39 @@ class WordService extends BaseService {
       }
       ctx.validate(rule, ctx.request.body)
       return await ctx.model.Words.create(ctx.request.body)
+    })
+  }
+
+  async en2ZhWord(word) {
+    return this.run(async () => {
+      const { ctx, app } = this
+      const { salt, appid, miyao, from, to } = app.config.transQuery
+      return await app.curl(app.config.baiduTransUrl, {
+        method: 'POST',
+        dataType: 'json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        data: {
+          salt,
+          appid,
+          q: word,
+          from,
+          to,
+          sign: md5(`${appid}${word}${salt}${miyao}`),
+        },
+      })
+    })
+  }
+
+  async en2EnWord(word) {
+    return this.run(async () => {
+      const { ctx, app } = this
+      return await app.curl(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+        {
+          dataType: 'json',
+          method: 'GET',
+        }
+      )
     })
   }
 }

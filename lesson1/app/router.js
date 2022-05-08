@@ -12,4 +12,5 @@ module.exports = (app) => {
   router.post('/api/user/edit', controller.user.edit)
   // words
   router.post('/api/word/add', controller.word.addWord)
+  router.post('/api/word/fy', controller.word.getWord)
 }
