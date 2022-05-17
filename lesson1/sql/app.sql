@@ -36,6 +36,8 @@ create table user
     grade int default 0 comment '等级',
     remark varchar
     (300) default null comment '备注',
+    zhTrans text comment '中文翻译',
+    enTrans text comment '英文翻译',
     createTime timestamp default current_timestamp comment '创建时间',
     updateTime timestamp default current_timestamp on
     update current_timestamp comment '更新时间'
@@ -45,3 +47,7 @@ create table user
     --- alter table word add column status int default 0 comment '状态';
 
     --- alter table word add column grade int default 0 comment '等级';
+
+    --- 追加字段
+    --- ALTER TABLE word add column zhTrans text comment '中文翻译';
+    --- ALTER TABLE word add column enTrans text comment '英文翻译';

@@ -23,8 +23,30 @@ class WordService extends BaseService {
         grade: { type: 'int', required: true, message: 'grade必填' },
         mean: { type: 'string', required: true, message: 'mean必填' },
       }
-      ctx.validate(rule, ctx.request.body)
-      return await ctx.model.Words.create(ctx.request.body)
+      const { word, status, grade, mean, ...other } = ctx.request.body
+      await ctx.validate(rule, ctx.request.body)
+      const wordInfo = await this.ctx.model.Words.findOne({
+        where: {
+          word,
+        },
+      })
+      if (wordInfo) {
+        return {
+          code: -1,
+          msg: '单词已存在',
+        }
+      }
+      const { data: zhTrans } = await this.en2ZhWord(word)
+      const { data: enTrans } = await this.en2EnWord(word)
+      return await ctx.model.Words.create({
+        word,
+        status,
+        grade,
+        mean,
+        zhTrans: JSON.stringify(zhTrans),
+        enTrans: JSON.stringify(enTrans),
+        ...other,
+      })
     })
   }
 

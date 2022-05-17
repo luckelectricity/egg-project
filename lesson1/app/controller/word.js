@@ -5,14 +5,16 @@ const BaseController = require('./base')
 class WordController extends BaseController {
   async addWord() {
     const word = await this.ctx.service.word.addWord()
+    if (word.code === -1) {
+      return this.error(word.msg)
+    }
     this.success(word)
   }
   async getWord() {
     const { ctx } = this
     const { word } = ctx.request.body
-    const fy = await this.ctx.service.word.en2ZhWord(word)
-    const en = await this.ctx.service.word.en2EnWord(word)
-    this.success({ fy: fy.data, en: en.data })
+    const wordInfo = await this.ctx.service.word.findWord(word)
+    this.success({ wordInfo })
   }
 }
 
