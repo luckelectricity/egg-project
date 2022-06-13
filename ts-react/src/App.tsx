@@ -1,13 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import Hello from "./components/Hello";
-import './App.css';
-
+import Button, { ButtonSize, ButtonType } from "./components/Button/button";
+import Alert from "./components/Alert/alert";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large} onClick={() => {
+          console.log('click');
+        }}>123</Button>
+        <Alert closeable={true} closeText="确定" type="success" onClose={
+          () => {
+            console.log('close');
+          }
+        }>
+          <p>123</p>
+        </Alert>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>123</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>123</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>123</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -19,7 +29,6 @@ function App() {
         >
           Learn React
         </a>
-        <Hello message="Hello, World" />
       </header>
     </div>
   );
